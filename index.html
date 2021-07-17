@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Rock Paper Scissors Game</title>
+    </head>
+
+    <body>
+        <div class="continer">
+            <div class="row">
+                <div class="col">
+                    <h1 id="gameText">Welcome to the Game</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Player</h3>
+                    <div class="diceOne">
+                        <div class="playerChoice">
+                            <img id="playerChoice" src="images/rock.png" alt="">
+                        </div>
+                        <div>
+                            <img src="images/rock.png" alt="" value="rock">
+                            <img src="images/paper.png" alt="" value="paper">
+                            <img src="images/scissors.png" alt="" value="scissors">
+                        </div>
+                        <div class="counter">
+                            <h3>0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="gameContollers" class="col">
+                    <button id="btnFight" class="btn">Fight</button>
+                </div>
+                <div class="col">
+                    <h3>Computer</h3>
+                    <div class="diceTwo">
+                        <div class="playerChoice">
+                            <img id="computerChoice" src="images/rock.png" alt="">
+                        </div>
+                        <div>
+                            <img src="images/rock.png" alt="" value="rock">
+                            <img src="images/paper.png" alt="" value="paper">
+                            <img src="images/scissors.png" alt="" value="scissors">
+                        </div>
+                        <div class="counter">
+                            <h3>0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6>all rights reserved © <a href="https://harundogdu.com" target="_blank">Harun Dogdu</a></h6>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="app.js"></script>
+        <script>
+            function addDarkmodeWidget() {
+              new Darkmode().showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+          </script>
+    </body>
+
+</html>

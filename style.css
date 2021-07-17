@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+}
+
+::selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+}
+
+.row .col {
+    margin: 10px 20px;
+}
+
+.row .col .diceOne,
+.row .col .diceTwo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.row .col .diceOne img,
+.row .col .diceTwo img {
+    width: 75px;
+    cursor: pointer;
+}
+
+.row .col #playerChoice,
+.row .col #computerChoice {
+    width: 125px;
+}
+
+.row .col #gameContollers {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.row .col .btn {
+    display: block;
+    padding: 10px 16px;
+    margin: 5px 0;
+    transition: all 300ms ease-in;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.row .col .btn:hover {
+    cursor: pointer;
+}
+
+.row .col a {
+    color:#000;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.row .col a:hover {
+    color: #e6576a;
+}
+
+.row .col .counter {
+    margin-top: 15px;
+}
